@@ -1,0 +1,1225 @@
+type: collection.insomnia.rest/5.0
+name: galaxy-training-project
+meta:
+  id: wrk_f057c84608404c7a8ca08552da456732
+  created: 1762814362604
+  modified: 1762814362604
+  description: ""
+collection:
+  - name: basic-Auth-swagger
+    meta:
+      id: fld_2c016d27652e416ab2d4f66ecaae8047
+      created: 1764197853837
+      modified: 1764197853837
+      sortKey: -1764197853837
+      description: ""
+    children:
+      - name: Gestion Escuelas
+        meta:
+          id: fld_13da4289718a464ab3548ee1d1c1177f
+          created: 1763941655515
+          modified: 1764197862959
+          sortKey: -1764197862916
+          description: ""
+        children:
+          - url: localhost:8080/api/gestion/escuelas
+            name: Save Escuela Conductor
+            meta:
+              id: req_a07f169b420d4353b1af2ef03b88d873
+              created: 1762899267316
+              modified: 1763942499508
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681515
+            method: POST
+            body:
+              mimeType: application/json
+              text: |2-
+                  {
+                    "nombreEstablecimiento": "Easdasdasdles",
+                    "ruc": "20444156810",
+                    "estado": 1, 
+                    "direccion": "Av. Los Ángeles 500, Urb. Primavera",
+                    "distritoId": 150105
+                  }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/8
+            name: Get Escuela By Id
+            meta:
+              id: req_098851d958f14656b97768e4a174171f
+              created: 1762899872868
+              modified: 1764199293701
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530686
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas
+            name: Get Escuelas Conductores Paged
+            meta:
+              id: req_09fa762e246a45a28cf623780a6d1174
+              created: 1762923972466
+              modified: 1763943205364
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530786
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/departamento/13
+            name: Get Escuelas By Departamento Id
+            meta:
+              id: req_f0efda6818284937890e374e11e38786
+              created: 1762963575639
+              modified: 1763943210097
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530536
+            method: GET
+            parameters:
+              - id: pair_4f0c6aa77cab4c499f09e6fdc805409e
+                name: nombre
+                value: manejo
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/10/delete
+            name: Delete Escuela By Id
+            meta:
+              id: req_0c2f503c43c74fd7a09f625ee7208e4c
+              created: 1763618874899
+              modified: 1764199162799
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681215
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            authentication:
+              type: basic
+              useISO88591: false
+              disabled: false
+              username: projas
+              password: "1234"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/8/updateEstado/0
+            name: Update Estado Escuela
+            meta:
+              id: req_c897c8d8958442bf9eb645e0f3ea2e34
+              created: 1763621283148
+              modified: 1764199302007
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681615
+            method: PATCH
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            authentication:
+              type: basic
+              useISO88591: false
+              disabled: false
+              username: projas
+              password: "1234"
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/7/update
+            name: Update Escuela By Id
+            meta:
+              id: req_3ee242f2551848b088838ad493d27e0c
+              created: 1763942530486
+              modified: 1764087792816
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530486
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |2-
+                  {
+                    "nombreEstablecimiento": "Escuela Básica",
+                    "ruc": "20444156810",
+                    "estado": 1, 
+                    "detalleDireccion": "Av. Los Ángeles 500, Urb. Otoño",
+                    "distritoId": 150106
+                  }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/ruc/20433156787
+            name: Get Escuela By Ruc
+            meta:
+              id: req_06bb4f05c5d64d079eb6658a8c99b40b
+              created: 1763942707533
+              modified: 1763942907852
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530586
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/nombre
+            name: Get Escuelas By Nombre Like Paged
+            meta:
+              id: req_823fc904a7334994a552961b13b9027c
+              created: 1763942951243
+              modified: 1764199247779
+              isPrivate: false
+              description: ""
+              sortKey: -1763942951243
+            method: GET
+            parameters:
+              - id: pair_729fe8c5971044a684f1724b3d68f800
+                name: nombre
+                value: escuela
+                description: ""
+                disabled: false
+              - id: pair_5923948fc53c40849a8146d1eddc9ef9
+                name: size
+                value: "10"
+                description: ""
+                disabled: false
+              - id: pair_164a50ab695c432cb9e160323f133ff3
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/provincia/1301
+            name: Get Escuelas By Provincia Id
+            meta:
+              id: req_cefedd155e5a42ac972ad90e4387b6c9
+              created: 1763943135253
+              modified: 1763943207700
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530561
+            method: GET
+            parameters:
+              - id: pair_0b97ec0f3bd74635acbd214d58337db0
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+              - id: pair_0a6c2e4417124ba19c98025fedfa957b
+                name: size
+                value: "7"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/distrito/130101
+            name: Get Escuelas By Distrito Id
+            meta:
+              id: req_cfba0fa0aa484cc9b559368d68b20376
+              created: 1763943195819
+              modified: 1763943228654
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530573.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Public Escuelas
+        meta:
+          id: fld_c785896844b44d63ac64040d530ca5df
+          created: 1763941666785
+          modified: 1764197893199
+          sortKey: -1764197863116
+          description: ""
+        children:
+          - url: localhost:8080/api/public/escuelas/7
+            name: Get Escuela By Id
+            meta:
+              id: req_cc155bb0cecf48668a8614282dba086e
+              created: 1763941791364
+              modified: 1763941985516
+              isPrivate: false
+              description: ""
+              sortKey: -1763941791364
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas
+            name: Get All Escuelas Paged
+            meta:
+              id: req_229be676b29c4f479e0e4af9042333c6
+              created: 1763941808831
+              modified: 1763942259858
+              isPrivate: false
+              description: ""
+              sortKey: -1763941808831
+            method: GET
+            parameters:
+              - id: pair_767663a9f3fa4bb9b06ace9c7619a8f9
+                name: size
+                value: "30"
+                description: ""
+                disabled: false
+              - id: pair_974105ee69d14fccbeaee3d9bd5deacd
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/ruc/20433156785
+            name: Get Escuela By Ruc
+            meta:
+              id: req_a6dc3db073a84e94922eb85f96baf50c
+              created: 1763942002624
+              modified: 1763942029218
+              isPrivate: false
+              description: ""
+              sortKey: -1763942002624
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/nombre
+            name: Get Escuelas by Nombre Like Paged
+            meta:
+              id: req_d06c642199fb4154a2bd6e15568d7ade
+              created: 1763942097619
+              modified: 1763942147228
+              isPrivate: false
+              description: ""
+              sortKey: -1763942097619
+            method: GET
+            parameters:
+              - id: pair_5827fc57fcd749acb4ca287f571a1d4e
+                name: nombre
+                value: Escuela
+                description: ""
+                disabled: false
+              - id: pair_11be2486c8d64dad871876034f782a72
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+              - id: pair_c95a6b763db04ff1b4dc550296b6d5dd
+                name: size
+                value: "5"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/distrito/130107
+            name: Get Escuelas By Distrito Id Paged
+            meta:
+              id: req_e0685c3901cb435fb18ed550a2e4fe1d
+              created: 1763942162343
+              modified: 1763942274953
+              isPrivate: false
+              description: ""
+              sortKey: -1763942162343
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/provincia/1301
+            name: Get Escuelas By Provincia Id Paged
+            meta:
+              id: req_b6e272bd32f8403aaff7eb9e3db532a5
+              created: 1763942288022
+              modified: 1763942311922
+              isPrivate: false
+              description: ""
+              sortKey: -1763942288022
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/departamento/13
+            name: Get Escuelas By Departamento Id Paged
+            meta:
+              id: req_c43571d50edc4106b3d0143861af5c3f
+              created: 1763942320613
+              modified: 1763942344029
+              isPrivate: false
+              description: ""
+              sortKey: -1763942320613
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Dirección
+        meta:
+          id: fld_f00dc137b3d64a20a242233d39ee696e
+          created: 1763941675381
+          modified: 1764197865390
+          sortKey: -1764197863016
+          description: ""
+        children:
+          - url: localhost:8080/api/direcciones/departamentos
+            name: Get Departamentos
+            meta:
+              id: req_73fa610a652045ac9d3f91ac10011642
+              created: 1762814378551
+              modified: 1763941711945
+              isPrivate: false
+              description: ""
+              sortKey: -1763941694934
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/provincias
+            name: Get Provincias por Departamento
+            meta:
+              id: req_fbb10e5469a9422aab1b9c2e12dce87e
+              created: 1762899949575
+              modified: 1763941716656
+              isPrivate: false
+              description: ""
+              sortKey: -1763941695034
+            method: GET
+            parameters:
+              - id: pair_e82b053c79854a9cb31640ab79b6e0b0
+                name: departamentoId
+                value: "13"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/distritos
+            name: Get Distritos por Provincia
+            meta:
+              id: req_d307941591794e408215faeccd077f08
+              created: 1762900046363
+              modified: 1763941719959
+              isPrivate: false
+              description: ""
+              sortKey: -1763941695134
+            method: GET
+            parameters:
+              - id: pair_fe9bb626de5c473aaed5933233b3b596
+                name: provinciaId
+                value: "1301"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/find-by-nombre
+            name: Get Distritos By Nombre Like
+            meta:
+              id: req_e907b510424643b68dcdfc79ae3659b0
+              created: 1762933057464
+              modified: 1763941694894
+              isPrivate: false
+              description: ""
+              sortKey: -1763941694834
+            method: GET
+            parameters:
+              - id: pair_bb13c176f5704bc3868fd3a0f8bfe3b3
+                name: nombre
+                value: lima
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: jwt-hateoas
+    meta:
+      id: fld_93c55b0e0d9447059995b7b477c06cb5
+      created: 1764197881699
+      modified: 1764197881699
+      sortKey: -1764197853787
+      description: ""
+    children:
+      - name: Gestion Escuelas
+        meta:
+          id: fld_1ed11ca4945b415dadfa7583d6946bcb
+          created: 1764197881700
+          modified: 1764197881700
+          sortKey: -1764197862916
+          description: ""
+        children:
+          - url: localhost:8080/api/gestion/escuelas
+            name: Save Escuela Conductor
+            meta:
+              id: req_7297a3f88a9e49db91e593f68b7f4041
+              created: 1764197881702
+              modified: 1764197881702
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681515
+            method: POST
+            body:
+              mimeType: application/json
+              text: |2-
+                  {
+                    "nombreEstablecimiento": "Easdasdasdles",
+                    "ruc": "20444156810",
+                    "estado": 1, 
+                    "direccion": "Av. Los Ángeles 500, Urb. Primavera",
+                    "distritoId": 150105
+                  }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/7
+            name: Get Escuela By Id
+            meta:
+              id: req_7272172b48a94e81895639a4f05b5ba7
+              created: 1764197881703
+              modified: 1764197881703
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530686
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas
+            name: Get Escuelas Conductores Paged
+            meta:
+              id: req_257ec34a188743a6918902eceb9332c0
+              created: 1764197881704
+              modified: 1764197881704
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530786
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/departamento/13
+            name: Get Escuelas By Departamento Id
+            meta:
+              id: req_6837f7eae9914d1db00fc01bead9f3ea
+              created: 1764197881705
+              modified: 1764197881705
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530536
+            method: GET
+            parameters:
+              - id: pair_4f0c6aa77cab4c499f09e6fdc805409e
+                name: nombre
+                value: manejo
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/2/delete
+            name: Delete Escuela By Id
+            meta:
+              id: req_2c07b05cf8f044b8861c725ffa82e44b
+              created: 1764197881706
+              modified: 1764197881706
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681215
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/6/updateEstado/1
+            name: Update Estado Escuela
+            meta:
+              id: req_78a4e0f57bb142adb5266f05763878a5
+              created: 1764197881708
+              modified: 1764197881708
+              isPrivate: false
+              description: ""
+              sortKey: -1763941681615
+            method: PATCH
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/7/update
+            name: Update Escuela By Id
+            meta:
+              id: req_295ec90bbe7f49bf8e01bd9d160fb68c
+              created: 1764197881709
+              modified: 1764197881709
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530486
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |2-
+                  {
+                    "nombreEstablecimiento": "Escuela Básica",
+                    "ruc": "20444156810",
+                    "estado": 1, 
+                    "detalleDireccion": "Av. Los Ángeles 500, Urb. Otoño",
+                    "distritoId": 150106
+                  }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/ruc/20433156787
+            name: Get Escuela By Ruc
+            meta:
+              id: req_eccc1237337e42d5b80dc12952133975
+              created: 1764197881710
+              modified: 1764197881710
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530586
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/nombre
+            name: Get Escuelas By Nombre Like Paged Hateoas
+            meta:
+              id: req_64b0b481f5e44ae8a9c6103b819bd395
+              created: 1764197881711
+              modified: 1764197881711
+              isPrivate: false
+              description: ""
+              sortKey: -1763942951243
+            method: GET
+            parameters:
+              - id: pair_729fe8c5971044a684f1724b3d68f800
+                name: nombre
+                value: escuela
+                description: ""
+                disabled: false
+              - id: pair_5923948fc53c40849a8146d1eddc9ef9
+                name: size
+                value: "10"
+                description: ""
+                disabled: false
+              - id: pair_164a50ab695c432cb9e160323f133ff3
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/provincia/1301
+            name: Get Escuelas By Provincia Id
+            meta:
+              id: req_b8ab50b21d7c48ebaa903bba8f449a89
+              created: 1764197881711
+              modified: 1764197881711
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530561
+            method: GET
+            parameters:
+              - id: pair_0b97ec0f3bd74635acbd214d58337db0
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+              - id: pair_0a6c2e4417124ba19c98025fedfa957b
+                name: size
+                value: "7"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/gestion/escuelas/distrito/130101
+            name: Get Escuelas By Distrito Id
+            meta:
+              id: req_26222cbff700458d93e37e35b575a8d4
+              created: 1764197881712
+              modified: 1764197881712
+              isPrivate: false
+              description: ""
+              sortKey: -1763942530573.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Public Escuelas
+        meta:
+          id: fld_55a1702aa1f04f4a99caf6839aa746c9
+          created: 1764197881713
+          modified: 1764197881713
+          sortKey: -1764197863116
+          description: ""
+        children:
+          - url: localhost:8080/api/public/escuelas
+            name: Get All Escuelas Paged
+            meta:
+              id: req_3bda211d6e6648e1b989a1320e14a654
+              created: 1764197881714
+              modified: 1764197881714
+              isPrivate: false
+              description: ""
+              sortKey: -1763941808831
+            method: GET
+            parameters:
+              - id: pair_767663a9f3fa4bb9b06ace9c7619a8f9
+                name: size
+                value: "30"
+                description: ""
+                disabled: false
+              - id: pair_974105ee69d14fccbeaee3d9bd5deacd
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/7
+            name: Get Escuela By Id
+            meta:
+              id: req_fcb021dcfabe4c038d072a17bdc96a9e
+              created: 1764197881714
+              modified: 1764197881714
+              isPrivate: false
+              description: ""
+              sortKey: -1763941791364
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/ruc/20433156785
+            name: Get Escuela By Ruc
+            meta:
+              id: req_ee7cd2ce4e6a488fa09191ecad1fbbcd
+              created: 1764197881716
+              modified: 1764197881716
+              isPrivate: false
+              description: ""
+              sortKey: -1763942002624
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/nombre
+            name: Get Escuelas by Nombre Like Paged
+            meta:
+              id: req_60bab9d6c7734945956c553c760d8bfd
+              created: 1764197881717
+              modified: 1764197881717
+              isPrivate: false
+              description: ""
+              sortKey: -1763942097619
+            method: GET
+            parameters:
+              - id: pair_5827fc57fcd749acb4ca287f571a1d4e
+                name: nombre
+                value: Escuela
+                description: ""
+                disabled: false
+              - id: pair_11be2486c8d64dad871876034f782a72
+                name: page
+                value: "0"
+                description: ""
+                disabled: false
+              - id: pair_c95a6b763db04ff1b4dc550296b6d5dd
+                name: size
+                value: "5"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/distrito/130107
+            name: Get Escuelas By Distrito Id Paged
+            meta:
+              id: req_d6e22a2a887945bf87726d6db7cd22bf
+              created: 1764197881718
+              modified: 1764197881718
+              isPrivate: false
+              description: ""
+              sortKey: -1763942162343
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/provincia/1301
+            name: Get Escuelas By Provincia Id Paged
+            meta:
+              id: req_5a94c0124ac44384a79fdae507f677fb
+              created: 1764197881719
+              modified: 1764197881719
+              isPrivate: false
+              description: ""
+              sortKey: -1763942288022
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/public/escuelas/departamento/13
+            name: Get Escuelas By Departamento Id Paged
+            meta:
+              id: req_f653e26292f4463fa2f44cfe02ace7dd
+              created: 1764197881719
+              modified: 1764197881719
+              isPrivate: false
+              description: ""
+              sortKey: -1763942320613
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Dirección
+        meta:
+          id: fld_d0d8ab96efdd456dbbde7491f0a6e96f
+          created: 1764197881720
+          modified: 1764197881720
+          sortKey: -1764197863016
+          description: ""
+        children:
+          - url: localhost:8080/api/direcciones/departamentos
+            name: Get Departamentos
+            meta:
+              id: req_26156a6de53e473d91c3253bd107d788
+              created: 1764197881721
+              modified: 1764197881721
+              isPrivate: false
+              description: ""
+              sortKey: -1763941694934
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/provincias
+            name: Get Provincias por Departamento
+            meta:
+              id: req_ef6fd5cab0314e819385c69e4f22f10e
+              created: 1764197881722
+              modified: 1764197881722
+              isPrivate: false
+              description: ""
+              sortKey: -1763941695034
+            method: GET
+            parameters:
+              - id: pair_e82b053c79854a9cb31640ab79b6e0b0
+                name: departamentoId
+                value: "13"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/find-by-nombre
+            name: Get Distritos By Nombre Like
+            meta:
+              id: req_f0086d0447554e4dbd523034652a5533
+              created: 1764197881723
+              modified: 1764197881723
+              isPrivate: false
+              description: ""
+              sortKey: -1763941694834
+            method: GET
+            parameters:
+              - id: pair_bb13c176f5704bc3868fd3a0f8bfe3b3
+                name: nombre
+                value: lima
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:8080/api/direcciones/distritos
+            name: Get Distritos por Provincia
+            meta:
+              id: req_fc95c00c8114475982ba7415911da0fa
+              created: 1764197881723
+              modified: 1764197881723
+              isPrivate: false
+              description: ""
+              sortKey: -1763941695134
+            method: GET
+            parameters:
+              - id: pair_fe9bb626de5c473aaed5933233b3b596
+                name: provinciaId
+                value: "1301"
+                description: ""
+                disabled: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_33377fc816c2f603834b8f6eca517a951003275a
+    created: 1762814362610
+    modified: 1762814362610
+environments:
+  name: Base Environment
+  meta:
+    id: env_33377fc816c2f603834b8f6eca517a951003275a
+    created: 1762814362607
+    modified: 1762814362607
+    isPrivate: false
